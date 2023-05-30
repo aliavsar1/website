@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/* bu bölüm altta çıkan scroll tuşunu yok ediyor */
+body {
+  position: fixed;
+  overflow: hidden;
+}
+/* --------------------yukarıya ait----------------------- */
+nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  border-bottom: 2px solid black;
+}
+.logo-box {
+  width: 15vw;
+  margin: 10px 0 20px 20px;
+}
+.menu-items {
+  width: 65vw;
+}
+.menu-items {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.menu-item {
+  text-transform: uppercase;
+  padding: 20px;
+  border-right: 1px solid #d7263d;
+  &:last-child {
+    border: 0;
+  }
+}
+
+.fa-solid {
+  font-size: 20px;
+}
+.menu-item span a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2;
+}
+/* ------------------LOGIN BOX BELOW-------------- */
+.login-box {
+  width: 20vw;
+  text-transform: uppercase;
+  border-left: 2px solid black;
+
+  /* border: 1px solid red; */
+}
+.shop-login-search-box-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.join-renew-box-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.shop-login-search-box-item {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+.join-renew-box-item {
+  background: #b11f28;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #b11f28;
+  border-top-width: 2px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  display: block;
+  text-align: center;
+  padding: 12px 24px;
+}
+.join-renew-box-item span a {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.join-renew-box-item-join {
+  /* border-right: 2px solid white; */
+  /* padding: 13px; */
+  margin-right: 3px;
+  width: 50%;
+}
+.join-renew-box-item-renew {
+  /* border-left: 2px solid white; */
+  /* padding: 13px; */
+  margin-left: 3px;
+  width: 50%;
+  overflow: hidden;
+}
+/* -------------------LOGIN-BOX ABOVE--------------- */
+
+/* -SLIDER AŞAĞIDA */
+.slider {
+  display: flex;
+  position: relative;
+}
+.slides {
+  display: flex;
+}
+
+.slide-texts {
+  width: 800px;
+  height: 630px;
+  text-align: center;
+  background-color: #b11f28;
+  color: white;
+}
+.buttons {
+  position: absolute;
+  top: 55%;
+}
+.prevBtn {
+  left: 0.1%;
+}
+
+.nextBtn {
+  left: 10.67%;
+}
+/* --SLIDER YUKARIDA */
