@@ -52,10 +52,6 @@ setInterval(function () {
     slider.style.transform = "translateX(" + -size * counter + "px)";
   }
   counterForAutoSlide++;
-  // buttons.addEventListener("click", () => {
-  //   counterForAutoSlide = 1;
-  //   slider.style.transform = "translateX(" + -size + "px)";
-  // });
 }, duration);
 
 //slider zamanlayıcı yukarıda
