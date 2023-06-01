@@ -1,0 +1,47 @@
+body {
+  width: 1590px;
+  margin: 0 auto;
+  padding: 0 auto;
+  height: auto;
+}
+.container {
+  display: flex;
+
+  margin-top: 200px;
+}
+.boxes {
+  border: solid red;
+  transform: translate(0, 0);
+  width: 140px;
+  height: 60px;
+}
+/* div {
+  transition-property: width, height;
+  transition-duration: 4s;
+  transition-delay: 2s; 
+} 
+
+.box:hover {
+  width: 200px;
+  height: 90px;
+} */
+.boxes {
+  transition-property: transform;
+  transition-duration: 1s;
+  /* transition-delay: 1s; */
+}
+
+.box1 {
+  transform: translate(100%, 0);
+}
+.box2 {
+  transform: translate(100%, 0);
+}
+.box3 {
+  transform: translate(100%, 0);
+}
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

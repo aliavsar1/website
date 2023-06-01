@@ -1,0 +1,25 @@
+div {
+  border: solid red;
+  transform: translate(0, 0);
+  width: 140px;
+  height: 60px;
+}
+/* div {
+  transition-property: width, height;
+  transition-duration: 4s;
+  transition-delay: 2s; 
+} 
+
+.box:hover {
+  width: 200px;
+  height: 90px;
+} */
+div {
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-delay: 1s;
+}
+
+.box:hover {
+  transform: translate(500%, 0);
+}

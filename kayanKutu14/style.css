@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 12.7%;
+  margin: auto;
+  border: 1px solid rgb(219, 231, 42);
+  overflow: hidden;
+}
+.divs {
+  height: 100px;
+
+  display: flex;
+}
+.box {
+  height: 100px;
+}
+.btn-box {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}

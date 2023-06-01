@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+header {
+  width: 1600px;
+  font-size: 2rem;
+  display: flex;
+  gap: 20rem;
+  background-color: rgb(107, 103, 103);
+}
+
+.logo {
+  color: rgb(224, 134, 134);
+  padding-left: 5rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.menu {
+  padding: 0 20rem;
+  display: block;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+ul li {
+  list-style-type: none;
+}
+p {
+  font-size: 2rem;
+  margin-top: 10rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* -------------sticky element------- */
+header {
+  overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+}

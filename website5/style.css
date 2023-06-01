@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+}
+header {
+  background-color: #fff;
+  width: 160rem;
+  max-width: 100%;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  align-items: center;
+}
+
+.logo-box-wrap {
+  width: 23rem;
+  max-width: 15.3%;
+  margin-left: 2rem;
+}
+
+.menu-box {
+  width: 105rem;
+  max-width: 64%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 2rem;
+  border-right: 1px solid #b11f28;
+
+  &:last-child {
+    border: 0;
+  }
+}
+.menu-item a {
+  text-align: center;
+  line-height: 1;
+  color: #133156;
+}
+
+.login-box {
+  width: 20rem;
+  width: 20%;
+  height: 10rem;
+  text-align: center;
+  border-left: 2px solid black;
+  border-bottom: 0px solid; /*bu satıır ve alttaki satırlar dik çizginin alt çizgiyle birleşmesini sağlıyor*/
+  margin-left: -1px;
+  margin-bottom: -2px;
+  display: flex;
+  align-items: center;
+}
+.login-items-top-box {
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 6rem;
+  padding: 0 0 1rem 3rem;
+}
+.fas {
+  font-size: 3rem;
+  color: #061931;
+}
+h5 {
+  color: #133156;
+}
+
+h4 {
+  color: #fff;
+}
+
+/*-----------------------------sticky bölümü aşağıda*/
+/* Style the navbar */
+#nav-bar {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Navbar links */
+/* #nav-bar a {
+  float: left;
+  display: block;
+  color: #423e3e;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+} */
+
+/* Page content */
+p {
+  font-size: large;
+  letter-spacing: 0.3rem;
+  margin: 10rem;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  margin-top: 6rem;
+}
+/*-----------------------------------sticky bölümü yukarıda*/

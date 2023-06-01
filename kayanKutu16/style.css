@@ -1,0 +1,14 @@
+.slider {
+  display: flex;
+}
+.slides {
+  display: flex;
+}
+
+.slide-texts {
+  width: 800px;
+  height: 452px;
+  text-align: center;
+  background-color: #b11f28;
+  color: white;
+}
