@@ -1,0 +1,2 @@
+# website
+I am working hard to be a self-taught fullstack developer and currently I am trying to learn all the subtleties of building a website, both frontend and backend. This repository shows the recent work I am doing.  By the way, I started  roughly one year ago, in February 2022. I am working with HTML, CSS, JavaScript, and NodeJs. I am also working to learn git and github. Soon, I will start React and VueJs.
