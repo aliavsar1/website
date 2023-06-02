@@ -18,6 +18,7 @@ window.addEventListener("load", (event) => {
     }
   });
 });
+
 kutu.addEventListener("mouseenter", mouseEnter);
 kutu.addEventListener("mouseleave", mouseLeave);
 

@@ -7,9 +7,9 @@
 }
 /* bu bölüm altta çıkan scroll tuşunu yok ediyor */
 body {
-  position: fixed;
-  overflow: hidden;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
 /* --------------------yukarıya ait----------------------- */
 nav {
   display: flex;
@@ -149,14 +149,14 @@ img {
 }
 .buttons {
   position: absolute;
-  top: 55%;
+  top: 94.5%;
 }
 .prevBtn {
   left: 0.1%;
 }
 
 .nextBtn {
-  left: 10.67%;
+  left: 96.7%;
 }
 /* --SLIDER YUKARIDA */
 /* ----------content-row-1 ---below----*/
@@ -173,3 +173,21 @@ img {
   color: white;
 }
 /* ----------content-row-1----above ---- */
+/* -------------sticky element------- */
+/* header {
+  overflow: hidden;
+} */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 999;
+  background-color: white;
+}
+.fixed {
+  /* position: fixed; */
+  /* top: 0; */
+  width: 100%;
+  margin-top: 113px;
+}
