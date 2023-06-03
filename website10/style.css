@@ -9,14 +9,17 @@
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* --------------------yukarıya ait----------------------- */
 nav {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   border-bottom: 2px solid black;
 }
+
 .logo-box {
   width: 15vw;
   margin: 10px 0 20px 20px;
@@ -36,7 +39,6 @@ nav {
   &:last-child {
     border: 0;
   }
-  display: relative;
 }
 
 .fa-solid {
@@ -123,25 +125,54 @@ nav {
   /* padding: 13px; */
   margin-left: 3px;
   width: 50%;
-  overflow: hidden;
 }
 /* -------------------LOGIN-BOX ABOVE--------------- */
+
+/* -------------sticky element------- */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 999;
+  background-color: white;
+}
+.fixed {
+  /* position: fixed; */
+  /* top: 0; */
+  width: 100%;
+  margin-top: 113px;
+}
+/* -------------sticky element------- */
 
 /* -SLIDER AŞAĞIDA */
 .slider {
   display: flex;
   position: relative;
+  max-width: 100%;
+}
+.slider-wrap {
+  width: 1600px;
+  height: 630px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .slides {
   display: flex;
   width: 1600px;
   height: 630px;
 }
+.slide-img {
+  width: 50%;
+}
 img {
-  width: 100%vh;
+  width: 100%vw;
 }
 .slide-texts {
   width: 800px;
+  max-width: 100%;
   height: 630px;
   text-align: center;
   background-color: #b11f28;
@@ -162,32 +193,27 @@ img {
 /* ----------content-row-1 ---below----*/
 .content-row-1 {
   display: flex;
-  width: 100%;
-}
-.content-box {
-  width: 50%;
-  height: 630px;
 }
 .content-row-1-left {
+  margin-left: auto;
+  margin-right: 0;
+  width: 50%;
+  height: 630px;
+
   background-color: #133156;
   color: white;
 }
-/* ----------content-row-1----above ---- */
-/* -------------sticky element------- */
-/* header {
-  overflow: hidden;
-} */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 
-  z-index: 999;
-  background-color: white;
+.content-row-1-right {
+  margin-left: 0;
+  margin-right: auto;
+  width: 50%;
+  height: 630px;
+
+  color: white;
+  background-color: #b11f28;
 }
-.fixed {
-  /* position: fixed; */
-  /* top: 0; */
-  width: 100%;
-  margin-top: 113px;
+.content-text {
+  text-align: justify;
 }
+/* ----------content-row-1----above ---- */

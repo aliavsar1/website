@@ -1,5 +1,6 @@
 //SLİDER AŞAĞIDA
 const slider = document.querySelector(".slider");
+const sliderContainer = document.querySelector(".slider-container");
 const slides = document.querySelectorAll(".slides");
 const nextButton = document.querySelector(".nextBtn");
 const buttons = document.querySelectorAll(".buttons");
@@ -62,8 +63,8 @@ window.addEventListener("load", () => {
     }
   });
 });
-slider.addEventListener("mouseenter", mouseEnter);
-slider.addEventListener("mouseleave", mouseLeave);
+sliderContainer.addEventListener("mouseenter", mouseEnter);
+sliderContainer.addEventListener("mouseleave", mouseLeave);
 
 function mouseEnter() {
   clearInterval(sliderTimer);
