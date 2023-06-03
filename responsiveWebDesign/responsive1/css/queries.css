@@ -1,0 +1,50 @@
+/* 1em=16px */
+/* ------------for below 1200px */
+
+@media (max-width: 75em) {
+  header {
+    width: 100%;
+    font-size: large;
+    background-color: rgb(155, 152, 148);
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+  }
+  .logo {
+    font-size: x-large;
+    margin-left: 0;
+    font-weight: 800;
+  }
+  /* .slider {
+    display: unset;
+  } */
+  img {
+    width: 100%;
+  }
+}
+/* ------------for below 900px */
+@media (max-width: 56em) {
+  header {
+    display: unset;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: x-large;
+    margin-left: 0;
+    font-weight: 800;
+  }
+
+  ul {
+    display: unset;
+  }
+  .slider {
+    display: unset;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    font-size: small;
+  }
+}

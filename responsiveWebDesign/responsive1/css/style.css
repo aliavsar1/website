@@ -1,0 +1,31 @@
+body {
+  overflow-x: hidden;
+}
+header {
+  font-size: x-large;
+  display: flex;
+  gap: 25%;
+  background-color: rgb(155, 152, 148);
+  align-items: center;
+  height: 75px;
+}
+.logo {
+  margin-left: 5%;
+  font-size: xx-large;
+}
+ul {
+  display: flex;
+  gap: 20%;
+}
+.slider {
+  display: flex;
+}
+p {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
