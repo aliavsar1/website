@@ -8,7 +8,6 @@
     background-color: rgb(155, 152, 148);
     margin-left: auto;
     margin-right: auto;
-    height: 75px;
   }
   .logo {
     font-size: x-large;
@@ -25,19 +24,49 @@
 /* ------------for below 900px */
 @media (max-width: 56em) {
   header {
-    display: unset;
+    font-size: large;
+    background-color: aliceblue;
+  }
+  .nav-bar {
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
+    /* 1)hide it visually */
+    opacity: 0;
+
+    /* 2)make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3)Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-bar-link {
     text-align: center;
   }
 
-  .logo {
-    font-size: x-large;
-    margin-left: 0;
-    font-weight: 800;
-  }
-
-  ul {
-    display: unset;
-  }
   .slider {
     display: unset;
   }
@@ -47,4 +76,14 @@
   p {
     font-size: small;
   }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    margin-left: auto;
+    margin-right: 5%;
+    z-index: 999;
+  }
+}
+/* ------------for below 750px */
+@media (max-width: 46em) {
 }

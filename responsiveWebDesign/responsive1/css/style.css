@@ -3,20 +3,47 @@ body {
 }
 header {
   font-size: x-large;
-  display: flex;
-  gap: 25%;
   background-color: rgb(155, 152, 148);
+}
+.nav-bar {
+  display: flex;
   align-items: center;
-  height: 75px;
+  justify-content: center;
+  height: 4rem;
 }
 .logo {
+  width: 30%;
   margin-left: 5%;
   font-size: xx-large;
 }
-ul {
+
+.nav-list {
+  width: 70%;
   display: flex;
-  gap: 20%;
+  gap: 15%;
 }
+/* ---------mobile-nav-icons----------- */
+.btn-mobile-nav {
+  display: flex;
+}
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: 3.8rem;
+  width: 3.8rem;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 3.8rem;
+  width: 3.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* ---------mobile-nav-icons----------- */
+
 .slider {
   display: flex;
 }
