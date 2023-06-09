@@ -19,7 +19,7 @@
     display: unset;
     opacity: 0;
     visibility: hidden;
-    transition: 1s;
+    transition: 0.5s;
   }
   .nav-open .menu-items {
     width: 100%;
@@ -29,7 +29,7 @@
     display: unset;
     opacity: 1;
     visibility: visible;
-    transition: 1s;
+    transition: 0.5s;
   }
 
   .menu-item a {
@@ -40,6 +40,7 @@
   }
 
   .btn-mobile-nav {
+    display: block;
     position: absolute;
     right: 2em;
     top: 2em;
@@ -59,5 +60,28 @@
   .nav-open .close-icon {
     display: block;
     font-size: 3em;
+  }
+  .slides {
+    display: unset;
+  }
+  .slide-img {
+    width: 100vw;
+    height: 50vh;
+  }
+  .slide-texts {
+    width: 100vw;
+    height: 50vh;
+  }
+  .content-row-1 {
+    display: unset;
+  }
+  .content-row-1-left {
+    width: 100vw;
+    height: 50vh;
+  }
+  .content-img {
+    margin: 0;
+    width: 100vw;
+    height: 50vh;
   }
 }

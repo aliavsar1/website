@@ -5,12 +5,17 @@
   text-decoration: none;
   list-style: none;
 }
-/* bu bölüm altta çıkan scroll tuşunu yok ediyor */
-body {
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
 .container {
   margin-left: auto;
   margin-right: auto;
 }
+/* bu bölüm altta çıkan scroll tuşunu yok ediyor */
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  font-family: "Public Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
 /* --------------------yukarıya ait----------------------- */

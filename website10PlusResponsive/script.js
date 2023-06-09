@@ -2,13 +2,15 @@
 const slider = document.querySelector(".slider");
 const sliderContainer = document.querySelector(".slider-container");
 const slides = document.querySelectorAll(".slides");
+const slideEl = document.querySelector(".slide-img");
 const nextButton = document.querySelector(".nextBtn");
 const buttons = document.querySelectorAll(".buttons");
 
 const previousButton = document.querySelector(".prevBtn");
 let counter = 1;
 
-const size = 1600;
+let size = slides[0].clientWidth;
+console.log(size);
 slider.style.transform = "translateX(" + -size + "px)";
 
 nextButton.addEventListener("click", () => {
@@ -24,7 +26,6 @@ previousButton.addEventListener("click", () => {
   slider.style.transform = "translateX(" + -size * counter + "px)";
 });
 slider.addEventListener("transitionend", () => {
-  console.log(slides);
   if (slides[counter].id === "slide7-clone") {
     slider.style.transition = "none";
     counter = slides.length - 2;
@@ -83,7 +84,7 @@ window.onscroll = function () {
 let navbar = document.getElementById("sticky");
 let sticky = navbar.offsetTop;
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.scrollY >= sticky) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
