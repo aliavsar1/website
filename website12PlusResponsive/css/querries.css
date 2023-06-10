@@ -1,0 +1,18 @@
+@media (max-width: 1200px) {
+  .menu-items {
+    position: absolute;
+    display: none;
+  }
+  .search-item {
+    display: none;
+  }
+  .login-box {
+    border: none;
+  }
+  .join-renew-box-items {
+    display: none;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+}

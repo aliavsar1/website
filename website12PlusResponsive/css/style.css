@@ -6,7 +6,8 @@
 
 .logo-box {
   width: 15vw;
-  margin: 10px 0 20px 20px;
+  min-width: 200px;
+  margin: 0.6vh 0 0.6vh 1.2vh;
 }
 .logo-img {
   width: 70%;
@@ -30,11 +31,12 @@
 }
 
 .fa-solid {
-  font-size: 2rem;
+  /* font-size: 2vw; */
+  font-size: calc(12px + 1.2vw);
 }
 .menu-item span a {
-  font-size: 1rem;
-
+  /* font-size: 1vw; */
+  font-size: calc(8px + 0.5vw);
   color: #102d50;
 }
 /* ------SUBMENU------------- */
@@ -42,10 +44,10 @@
   display: none;
 }
 .menu-item:hover .submenu {
+  width: 17vw;
   display: block;
   position: absolute;
   background-color: #133156;
-  width: 20rem;
   margin-left: -1rem;
   margin-top: 1rem;
 }
@@ -54,8 +56,8 @@
   display: block;
   text-align: left;
   color: white;
-  font-size: 1rem;
-  padding: 2rem 2rem 2rem 1rem;
+  font-size: calc(8px + 0.5vw);
+  padding: 2vw 2vw 2vw 1vw;
 }
 
 .submenu-item-box:hover a {
@@ -73,11 +75,11 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 25px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  gap: 1.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .join-renew-box-items {
@@ -86,7 +88,8 @@
   justify-content: space-evenly;
 }
 .shop-login-search-box-item {
-  font-size: 0.8rem;
+  /* font-size: 0.8vw; */
+  font-size: calc(8px + 0.4vw);
   width: 100%;
   text-align: center;
 }
@@ -105,12 +108,13 @@
   border-left-width: 0px;
   display: block;
   text-align: center;
-  padding: 12px 24px;
+  padding: 0.8vw 1.5vw;
 }
 .join-renew-box-item span {
   color: white;
   font-weight: bold;
-  font-size: 1rem;
+  /* font-size: 1vw; */
+  font-size: calc(8px + 0.5vw);
 }
 .join-renew-box-item-join {
   margin-right: 3px;
@@ -137,7 +141,7 @@
 }
 .fixed {
   width: 100%;
-  margin-top: 113px;
+  margin-top: 7vw;
 }
 /* -------------sticky element------- */
 
@@ -146,6 +150,7 @@
   display: flex;
   position: relative;
   width: 100vw;
+  background-size: cover;
 }
 .slider-wrap {
   width: 100vw;
@@ -168,49 +173,76 @@
   text-align: left;
   background-color: #b11f28;
   color: white;
-  font-size: 1.2rem;
-  padding-left: 2rem;
+  /* font-size: 1.2vw; */
+  font-size: calc(8px + 0.7vw);
+  padding-left: 2vw;
+}
+.read-more-slide {
+  /* read-more for the left hand-side of the page */
+  display: block;
+  width: 10vw;
+  min-width: 8vw;
+  height: 6vh;
+  min-height: 1vh;
+  /* font-size: 1vw; */
+  font-size: calc(4px + 0.8vw);
+  font-weight: 700;
+  background-color: #133156;
+  color: white;
+  margin-top: 1.2vw;
+  text-align: center;
+  line-height: calc(5vh + 10px);
+  background-size: cover;
 }
 .read-more {
   /* read-more for the left hand-side of the page */
   display: inline-block;
-  width: 10rem;
-  height: 3rem;
-  font-size: 1rem;
+  width: 10vw;
+  min-width: 1vw;
+  height: 3vw;
+  min-height: 2vh;
+  /* font-size: 1vw; */
+  font-size: calc(4px + 0.8vw);
   font-weight: 700;
-  background-color: #133156;
+  background-color: #b11f28;
   color: white;
-  margin-top: 1.2rem;
+  margin-top: 1.2vw;
   text-align: center;
-  line-height: 3rem;
+  line-height: 3vw;
 }
 .read-more:hover {
   background-color: #0c223d;
 }
 .read-more2 {
-  display: inline-block;
-  width: 10rem;
-  height: 3rem;
-  font-size: 1rem;
+  display: block;
+  width: 10vw;
+  min-width: 1vw;
+  height: 3vw;
+  min-height: 2vh;
+  font-size: calc(4px + 0.8vw);
   font-weight: 700;
-  background-color: #b11f28;
+  background-color: #133156;
   color: white;
-  margin-top: 1.2rem;
+  margin-top: 1.2vw;
   text-align: center;
-  line-height: 3rem;
+  line-height: 3vw;
 }
 .read-more2:hover {
   background-color: #701118;
 }
 .buttons {
+  display: block;
   position: absolute;
-  top: 91.5%;
+  font-size: 3vw;
+  top: 50vh;
+  color: white;
+  cursor: pointer;
 }
 .prevBtn {
-  left: 0.2%;
+  left: 1vw;
 }
 .nextBtn {
-  left: 97.7%;
+  left: 90vw;
 }
 /* --SLIDER YUKARIDA */
 /* ----------content-row-1 ---below----*/
@@ -222,8 +254,8 @@
   color: white;
   width: 51vw;
   height: 50vh;
-  font-size: 1.2rem;
-  padding-left: 2rem;
+  font-size: 1.2vw;
+  padding-left: 2vw;
 }
 
 .content-img {
@@ -233,22 +265,22 @@
 /* ----------content-row-1----above ---- */
 /* *******************ADVERT************** */
 .advert-box {
-  width: 40rem;
-  height: 20rem;
+  width: 40vw;
+  height: 20vw;
   border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 3vw;
 }
 .advert-box-left {
-  font-size: 3rem;
+  font-size: 3vw;
   border-right: 2px solid black;
 }
 .advert-box-right {
-  font-size: 3rem;
+  font-size: 3vw;
   border-left: 2px solid black;
 }
 /* ----------content-row-2 ---below----*/
@@ -260,8 +292,8 @@
   color: white;
   width: 51vw;
   height: 50vh;
-  font-size: 1.2rem;
-  padding-left: 2rem;
+  font-size: 1.2vw;
+  padding-left: 2vw;
 }
 
 /* ----------content-row-2----above ---- */
@@ -269,11 +301,11 @@
 /*  *********************LINK-CABINET*******below*********  */
 .link-cabinet-box {
   width: 100vw;
-  height: 48rem;
+  height: 48vw;
   background-color: #133156;
-  margin-top: 2em;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  margin-top: 2vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 .link-cabinet-top,
 .link-cabinet-bottom {
@@ -281,59 +313,60 @@
 }
 .link-box-left-wrap {
   width: 100%;
-  height: 17rem;
+  height: 17vw;
   position: relative;
-  margin: 2rem 1rem 0rem 2rem;
+  margin: 2vw 1vw 0vw 2vw;
 }
 .link-box-right-wrap {
   width: 100%;
-  height: 17rem;
+  height: 17vw;
   position: relative;
-  margin: 2rem 1rem 0rem 1rem;
+  margin: 2vw 1vw 0vw 1vw;
 }
 .link-box-left {
   width: 100%;
-  height: 17rem;
+  height: 17vw;
   border: 2px solid white;
   color: white;
-  padding: 4rem 2rem 2rem 4rem;
-  font-size: 4rem;
+  padding: 4vw 2vw 2vw 4vw;
+  font-size: 4vw;
   transition: 0.3s;
   position: absolute;
 }
 .link-box-left:hover {
   background-color: #b11f28;
-  margin-left: 0.5rem;
+  margin-left: 0.5vw;
   position: absolute;
   transition: 0.3s;
 }
 
 .link-box-right {
   width: 97%;
-  height: 17rem;
+  height: 17vw;
   border: 2px solid white;
   color: white;
-  padding: 4rem 2rem 2rem 4rem;
+  padding: 4vw 2vw 2vw 4vw;
   font-size: 4rem;
   transition: 0.3s;
 }
 .link-box-right:hover {
   background-color: #b11f28;
-  margin-left: 0.5rem;
+  margin-left: 0.5vw;
   position: absolute;
   transition: 0.3s;
 }
 
 .link-cabinet-text1 {
-  font-size: 4rem;
+  font-size: 4vw;
   font-weight: 500;
 }
 .link-cabinet-text2 {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 1vw;
+  font-size: 1vw;
 }
 .arrow-icon {
-  padding-left: 30rem;
+  font-size: 4vw;
+  padding-left: 30vw;
 }
 
 /* *********************LINK-CABINET*******above******** */
@@ -343,34 +376,34 @@
 .footer-columns {
   display: flex;
   width: 100vw;
-  height: 22rem;
+  height: 22vw;
   background-color: #133156;
-  margin-top: 4rem;
-  border-bottom: 10px solid #b11f28;
+  margin-top: 4vw;
+  border-bottom: 0.6vw solid #b11f28;
 }
 .columns {
-  width: 20rem;
-  height: 16rem;
-  margin: 2rem;
+  width: 20vw;
+  height: 16vw;
+  margin: 2vw;
 }
 
 .columns span {
   display: block;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 1vw;
 }
 .column-3 {
   color: white;
-  font-size: 1rem;
-  margin-top: 3rem;
+  font-size: 1vw;
+  margin-top: 3vw;
   line-height: 2;
 }
 .column-4 {
-  font-size: 2rem;
-  margin-left: 20rem;
-  margin-top: 3rem;
+  font-size: 2vw;
+  margin-left: 20vw;
+  margin-top: 3vw;
 }
 .column-4 a {
   color: white;
@@ -380,8 +413,8 @@
 
 .copyright-row {
   width: 100vw;
-  height: 5rem;
-  padding-top: 1rem;
+  height: 5vw;
+  padding-top: 1vw;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1vw;
 }
