@@ -8,11 +8,93 @@
   }
   .login-box {
     border: none;
+    font-size: calc(16px+2vw);
   }
+
+  /* .shop-item {
+    margin-left: 40vw;
+    font-size: calc(16px+2vw);
+  }
+  .login-item {
+    font-size: calc(16px+4vw);
+  } */
+
   .join-renew-box-items {
     display: none;
   }
   .btn-mobile-nav {
     display: block;
+    background-color: #b11f28;
+
+    border: none;
+    padding: 4vw 2vw 4vw 2vw;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 6vw;
+  }
+  .close-icon {
+    display: none;
+  }
+
+  .slides {
+    display: unset;
+  }
+  .slide-img {
+    width: 100vw;
+    height: 50vh;
+  }
+  .slide-texts {
+    width: 100vw;
+    height: 50vh;
+  }
+  .content-row-1 {
+    display: unset;
+  }
+  .content-row-1-left {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .content-img {
+    width: 100vw;
+    height: 50vh;
+  }
+  .content-row-2 {
+    display: unset;
+  }
+  .content-row-2-right {
+    width: 100vw;
+    height: 50vh;
+  }
+  .link-cabinet-box {
+    width: 100vw;
+    height: 100vw;
+  }
+  .link-cabinet-top,
+  .link-cabinet-bottom {
+    display: unset;
+  }
+  .link-box-left-wrap {
+    width: 90%;
+    height: 17vw;
+    margin: 2vw;
+  }
+  .link-box-right-wrap {
+    width: 90%;
+    height: 17vw;
+    margin: 2vw;
+  }
+  .link-box-left {
+    width: 100%;
+    height: 17vw;
+  }
+
+  .link-box-right {
+    width: 100%;
+    height: 17vw;
+  }
+  .arrow-icon {
+    padding-left: 60vw;
   }
 }
