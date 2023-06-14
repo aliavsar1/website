@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>The Element Object</h1>
+    <h2>The id Property</h2>
+
+    <div class="tag" id="1" onClick="aa(event)">HTML</div>
+    <div class="tag" id="2" onClick="aa(event)">CSS</div>
+    <div class="tag" id="3" onClick="aa(event)">JavaScript</div>
+
+    <p>The value of the id attribute of the first link is:</p>
+    <p id="demo"></p>
+
+    <script>
+      let tagEl = document.querySelectorAll(".tag");
+      function aa(e) {
+        event.preventDefault();
+        let a = e.currentTarget.id;
+        tagEl[a - 1].classList.toggle("ok");
+        let b = e.currentTarget.classList.contains("ok");
+        console.log(b);
+        if (b) {
+          console.log("red");
+          document.body.style.backgroundColor = "red";
+        } else {
+          console.log("blue");
+          document.body.style.backgroundColor = "blue";
+        }
+      }
+    </script>
+  </body>
+</html>
